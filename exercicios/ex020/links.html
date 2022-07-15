@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        a {
+            color: #bd7100;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: #9b5d00;
+        }
+
+        a:hover {
+            color: #bd0000;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #006a9b;
+        }
+
+        .importante {
+            background-color: #a8e3ff;
+        }
+
+        .importante::before {
+            content: '⇨ ';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://g1.globo.com/" target="_blank">G1</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+        <li><a href="https://github.com/" target="_blank" class="importante">GitHub</a></li>
+    </ul>
+</body>
+</html>
