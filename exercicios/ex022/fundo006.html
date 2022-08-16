@@ -4,25 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teste de imagem de fundo</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         body {
+            max-width: 600px;
             height: 100vh;
+            margin: auto;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            font-family: system-ui;
+        }
+
+        header {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 0px 0px 10px 10px;
         }
 
         main {
             background-color: white;
-            width: 400px;
             padding: 30px;
-            margin: auto;
             border-radius: 10px;
             box-shadow: 10px 10px #ccc;
-            font-family: system-ui;
+        }
+
+        h1, h2, h3, p {
+            margin-bottom: 10px;
         }
 
         p {
@@ -35,6 +51,11 @@
     </style>
 </head>
 <body>
+    <header>
+        <h1>Curso de HTML e CSS</h1>
+        <h2>Capítulo 19</h2>
+        <h3>Aula 5 - Mudando o tamanho da imagem de fundo do site</h3>
+    </header>
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>Propriedade usada: <code>background-size</code>.</p>
