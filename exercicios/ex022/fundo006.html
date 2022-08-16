@@ -12,26 +12,24 @@
         }
 
         body {
-            max-width: 600px;
             height: 100vh;
-            margin: auto;
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center top;
-            background-repeat: no-repeat;
+            background: black url(imagens/wallpaper002.jpg) center no-repeat fixed;
             background-size: cover;
             font-family: system-ui;
         }
 
         header {
+            max-width: 500px;
             background-color: white;
             padding: 30px;
-            margin-bottom: 30px;
+            margin: 0 auto 30px auto;
             border-radius: 0px 0px 10px 10px;
         }
 
         main {
+            max-width: 500px;
             background-color: white;
+            margin: 0px auto 50px auto;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 10px 10px #ccc;
@@ -55,12 +53,30 @@
         <h1>Curso de HTML e CSS</h1>
         <h2>Capítulo 19</h2>
         <h3>Aula 5 - Mudando o tamanho da imagem de fundo do site</h3>
+        <h3>Aula 6 - Background-attachment e shorthand</h3>
     </header>
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>Propriedade usada: <code>background-size</code>.</p>
-        <p>Parâmetro <code>contain</code> exibe a imagem por inteiro, sem cortes.</p>
-        <p>Parâmetro <code>cover</code> exibe a imagem cobrindo a tela inteira.</p>
+        <article>
+            <h1>Tamanho da imagem</h1>
+            <p>Propriedade usada: <code>background-size</code>.</p>
+            <p>Parâmetro <code>contain</code> exibe a imagem por inteiro, sem cortes.</p>
+            <p>Parâmetro <code>cover</code> exibe a imagem cobrindo a tela inteira.</p>
+        </article>
+        <br>
+        <article>
+            <h1>Vínculo da imagem</h1>
+            <p>Propriedade usada: <code>background-attachment</code>.</p>
+            <p>Parâmetro <code>scroll</code> faz a imagem rolar junto com o conteúdo.</p>
+            <p>Parâmetro <code>fixed</code> faz a imagem ficar fixa.</p>
+        </article>
+        <br>
+        <article>
+            <h1>Shorthand</h1>
+            <p>Propriedade usada: <code>background</code>.</p>
+            <p>Ordem dos parâmetros: <code>color</code> > <code>image</code> > <code>position</code> > <code>repeat</code> > <code>attachment</code>.</p>
+            <p>Obs: o parâmetro <code>size</code> não funciona.</p>
+        </article>
     </main>
 </body>
 </html>
