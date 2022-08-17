@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte-titulo: 'Passion One', cursive;
+    --fonte-texto: 'Noto Serif', Georgia, serif;
+    --fonte-verso: 'Sriracha', cursive;
+    --tamanho-titulo: 6em;
+    --tamanho-primeira-letra-titulo: 1.5em;
+    --tamanho-texto: 1.2em;
+    --tamanho-verso: 1.6em;
+    --cor0: #C18340;
+    --cor1: #b45f06;
+    --cor2: #783f04;
+    --cor3: #824504;
+    --cor4: #361C02;
+    --cor5: #362412;
+    --cor6: #d6d6d6;
+}
+
+body {
+    background-color: var(--cor6);
+}
+
+header {
+    margin-bottom: 50px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(180deg, var(--cor1), var(--cor2));
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 10px #818181;
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    font-size: var(--tamanho-titulo);
+    text-transform: uppercase;
+}
+
+span {
+    font-size: var(--tamanho-primeira-letra-titulo);
+}
+
+p {
+    font-family: var(--fonte-texto);
+    font-size: var(--tamanho-texto);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 0 auto 50px auto;
+    padding: 20px 0;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0px 10px #818181;
+}
+
+.container-estrofe-padrao {
+    padding: 30px 60px;
+    margin-bottom: 30px;
+}
+
+.verso {
+    font-family: var(--fonte-verso);
+    font-size: var(--tamanho-verso);
+    line-height: 2;
+}
+
+.container-estrofe-parallax1 {
+    margin-bottom: 30px;
+    padding: 30px;
+    background: var(--cor6) url(../imagens/background001.jpg) center no-repeat fixed;
+    background-size: cover;
+}
+
+.container-estrofe-parallax2 {
+    margin-bottom: 30px;
+    padding: 30px;
+    background: var(--cor6) url(../imagens/background002.jpg) center no-repeat fixed;
+    background-size: cover;
+}
+
+.estrofe-parallax {
+    width: fit-content;
+    padding: 30px;
+    color: white;
+    background-color: #00000080;
+    border-radius: 20px;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(180deg, var(--cor1), var(--cor2));
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 4px 10px #818181;
+}
