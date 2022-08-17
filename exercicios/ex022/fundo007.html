@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #cecece;
+            font-family: system-ui;
+        }
+
+        header {
+            max-width: 500px;
+            background-color: white;
+            padding: 30px;
+            margin: 0 auto 30px auto;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        main {
+            max-width: 500px;
+            background-color: white;
+            margin: 0px auto 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 10px 10px #ccc;
+        }
+
+        h1, h2, h3, p {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        code {
+            background-color: #f5d64e;
+        }
+
+        #container {
+            background: #194c61 url(imagens/target001.png) center no-repeat;
+            background-size: 100% 100%;
+            margin: auto;
+            max-width: 500px;
+            height: 60vh;
+            padding: 30px;
+            position: relative;
+        }
+
+        #conteudo {
+            background: #e2b728 url(imagens/target001.png) center no-repeat;
+            background-size: 100% 100%;
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML e CSS</h1>
+        <h2>Capítulo 19</h2>
+        <h3>Aula 7 - Centralização vertical de caixas</h3>
+    </header>
+
+    <main>
+        <article>
+            <h1>Centralizar na vertical</h1>
+            <p>A propriedade <code>position</code> permite definir a posição do elemento.</p>
+            <p>O <strong>container</strong> usa o parâmetro: <code>relative</code>.</p>
+            <p>O <strong>conteúdo</strong> usa o parâmetro: <code>absolute</code>.</p>
+            <br>
+            <p>As propriedades <code>top</code> e <code>left</code> permitem definir as posições do topo e esquerda.</p>
+            <br>
+            <p>A propriedade <code>transform</code> faz transofrmações em um elemento.</p>
+            <p>O parâmetro <code>translate</code> permite alterar a posição do elemento.</p>
+        </article>
+    </main>
+
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
