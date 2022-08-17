@@ -7,42 +7,8 @@
     <title>Alinhamento vertical</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
         body {
-            background-color: #cecece;
-            font-family: system-ui;
-        }
-
-        header {
-            max-width: 500px;
-            background-color: white;
-            padding: 30px;
-            margin: 0 auto 30px auto;
-            border-radius: 0px 0px 10px 10px;
-        }
-
-        main {
-            max-width: 500px;
-            background-color: white;
-            margin: 0px auto 50px auto;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 10px 10px #ccc;
-        }
-
-        h1, h2, h3, p {
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 1.2em;
-        }
-
-        code {
-            background-color: #f5d64e;
+            background-color: #77a8be;
         }
 
         #container {
@@ -76,22 +42,24 @@
 
     <main>
         <article>
-            <h1>Centralizar na vertical</h1>
+            <h1>Centralização vertical de caixas</h1>
+            <h2>Posição</h2>
             <p>A propriedade <code>position</code> permite definir a posição do elemento.</p>
             <p>O <strong>container</strong> usa o parâmetro: <code>relative</code>.</p>
             <p>O <strong>conteúdo</strong> usa o parâmetro: <code>absolute</code>.</p>
-            <br>
-            <p>As propriedades <code>top</code> e <code>left</code> permitem definir as posições do topo e esquerda.</p>
-            <br>
-            <p>A propriedade <code>transform</code> faz transofrmações em um elemento.</p>
-            <p>O parâmetro <code>translate</code> permite alterar a posição do elemento.</p>
+
+            <h2>Distância</h2>
+            <p>As propriedades <code>top</code> e <code>left</code> permitem definir as distâncias em relação ao topo e à esquerda.</p>
+
+            <h2>Transformar</h2>
+            <p>A propriedade <code>transform</code> faz transformações em um elemento.</p>
+            <p>O parâmetro <code>translate</code> permite fazer a translação do elemento para uma posição.</p>
+
+            <h2>Exemplo:</h2>
+            <section id="container">
+                <article id="conteudo"></article>
+            </section>
         </article>
     </main>
-
-    <section id="container">
-        <article id="conteudo">
-
-        </article>
-    </section>
 </body>
 </html>
