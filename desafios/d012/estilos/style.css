@@ -12,8 +12,8 @@
     --fonte-titulo: 'Passion One', cursive;
     --fonte-texto: 'Noto Serif', Georgia, serif;
     --fonte-verso: 'Sriracha', cursive;
-    --tamanho-titulo: 6em;
-    --tamanho-primeira-letra-titulo: 1.4em;
+    --tamanho-titulo: 5em;
+    --tamanho-primeira-letra-titulo: 1.5em;
     --tamanho-texto: 1.2em;
     --tamanho-verso: 1.6em;
     --cor0: #C18340;
@@ -22,7 +22,7 @@
     --cor3: #824504;
     --cor4: #361C02;
     --cor5: #362412;
-    --cor6: #d6d6d6;
+    --cor6: #e6e6e6;
 }
 
 body {
@@ -30,13 +30,14 @@ body {
 }
 
 header {
-    margin-bottom: 50px;
+    max-width: 740px;
+    margin: 0 auto 50px auto;
     padding: 30px;
     text-align: center;
     color: white;
     background-image: linear-gradient(180deg, var(--cor1), var(--cor2));
     border-radius: 0 0 20px 20px;
-    box-shadow: 0 4px 10px #818181;
+    box-shadow: 0 4px 10px #00000070;
 }
 
 h1 {
@@ -69,7 +70,7 @@ main {
     max-width: 800px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 0px 10px #818181;
+    box-shadow: 0 0px 10px #00000070;
 }
 
 .container-estrofe-padrao {
@@ -112,10 +113,12 @@ main {
 }
 
 footer {
+    max-width: 770px;
+    margin: auto;
     padding: 15px;
     text-align: center;
     color: white;
     background-image: linear-gradient(180deg, var(--cor1), var(--cor2));
     border-radius: 20px 20px 0 0;
-    box-shadow: 0 4px 10px #818181;
+    box-shadow: 0 4px 10px #00000070;
 }
