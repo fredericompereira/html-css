@@ -13,26 +13,26 @@
     --fonte-texto: 'Noto Serif', Georgia, serif;
     --fonte-verso: 'Sriracha', cursive;
     --tamanho-titulo: 5em;
-    --tamanho-primeira-letra-titulo: 1.5em;
     --tamanho-texto: 1.2em;
-    --tamanho-verso: 1.6em;
+    --tamanho-verso: 1.3em;
     --cor0: #C18340;
     --cor1: #b45f06;
     --cor2: #783f04;
     --cor3: #824504;
     --cor4: #361C02;
     --cor5: #362412;
-    --cor6: #e6e6e6;
+    --cor-fundo: #e6e6e6;
 }
 
 body {
-    background-color: var(--cor6);
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
 }
 
-header {
+#cabecalho-site {
     max-width: 740px;
     margin: 0 auto 50px auto;
-    padding: 30px;
+    padding: 30px 40px;
     text-align: center;
     color: white;
     background-image: linear-gradient(180deg, var(--cor1), var(--cor2));
@@ -40,15 +40,10 @@ header {
     box-shadow: 0 4px 10px #00000070;
 }
 
-h1 {
+#titulo-site {
     font-family: var(--fonte-titulo);
     font-size: var(--tamanho-titulo);
-    text-transform: uppercase;
-    line-height: 1;
-}
-
-span {
-    font-size: var(--tamanho-primeira-letra-titulo);
+    font-variant: small-caps;
 }
 
 p {
@@ -59,6 +54,7 @@ p {
 a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
@@ -67,46 +63,32 @@ a:hover {
 
 main {
     margin: 0 auto 50px auto;
+    padding-bottom: 20px;
     max-width: 800px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0px 10px #00000070;
 }
 
-.container-estrofe-padrao {
-    padding: 40px 60px 20px 60px;
-}
-
-.estrofe-padrao {
-    margin-bottom: 30px;
-}
-
-.verso {
+.estrofe {
     font-family: var(--fonte-verso);
     font-size: var(--tamanho-verso);
-    line-height: 2;
+    line-height: 2em;
 }
 
-.container-estrofe-parallax1 {
-    margin-bottom: 10px;
-    padding: 30px;
-    background: var(--cor6) url(../imagens/background001.jpg) center no-repeat fixed;
+.container-estrofe-padrao {
+    padding: 10vh 30px;
+}
+
+.container-estrofe-imagem {
+    padding: 10vh 20px;
     background-size: cover;
     box-shadow: inset 0px 0px 20px #00000070;
 }
 
-.container-estrofe-parallax2 {
-    margin-bottom: 10px;
-    padding: 30px;
-    background: var(--cor6) url(../imagens/background002.jpg) center no-repeat fixed;
-    background-size: cover;
-    box-shadow: inset 0px 0px 20px #00000070;
-}
-
-.estrofe-parallax {
+.container-estrofe-imagem > .estrofe {
     width: fit-content;
-    margin: 20px 0;
-    padding: 30px;
+    padding: 10px;
     color: white;
     background-color: #00000080;
     border-radius: 20px;
