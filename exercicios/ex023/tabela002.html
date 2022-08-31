@@ -10,6 +10,7 @@
         table {
             min-width: 70%;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -20,10 +21,19 @@
             background-color: #cccccc;
         }
 
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+
         caption, td, th {
             padding: 10px;
             border: 1px solid black;
             vertical-align: middle;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: #e0e0e0;
         }
 
         .numero {
@@ -37,6 +47,8 @@
         <h2>Capítulo 21</h2>
         <h3>Aula 4 - Trabalhando com tabelas grandes</h3>
         <h3>Aula 5 - Caption e Escopo de títulos em tabelas</h3>
+        <h3>Aula 6 - Efeito zebrado na tabela</h3>
+        <h3>Aula 7 - Cabeçalho fixo em tabelas grandes</h3>
     </header>
 
     <main>
@@ -54,10 +66,30 @@
             </ul>
 
             <h2>Escopo de títulos</h2>
+            <p>O escopo permite os mecanismos de busca entender melhor os valores da tabela.</p>
             <p>Dentro da tag <code>th</code>, inserir o atributo <code>scope</code>.</p>
             <ul>
                 <li>Valor <code>col</code> faz referência à coluna.</li>
                 <li>Valor <code>row</code> faz referência à linha.</li>
+            </ul>
+
+            <h2>Efeito zebrado</h2>
+            <p>Para criar o efeito zebrado, usar a pseudo-classe <code>:nth-child()</code>.</p>
+            <p>Inserir o valor desejado entre parênteses.</p>
+            <ul>
+                <li>Valor <code>2n</code> criará o efeito a cada duas linhas.</li>
+                <li>Valor <code>odd</code> criará o efeito em todas as linhas ímpares.</li>
+                <li>Valor <code>even</code> criará o efeito em todas as linhas pares.</li>
+            </ul>
+            <p>Depois, inserir <code>background-color</code> e escolher a cor desejada.</p>
+
+            <h2>Cabeçalho fixo</h2>
+            <p>Primeiro, definir a posição da tabela como <code>relative</code>.</p>
+            <p></p>
+            <p>Depois, no <code>thead</code> declarar:</p>
+            <ul>
+                <li><code>position: sticky;</code> (a cabeça da tabela ficará colada).</li>
+                <li><code>top: -1px;</code> (a posição da cabeça será no topo da tela).</li>
             </ul>
             
             <h2>Exemplo:</h2>

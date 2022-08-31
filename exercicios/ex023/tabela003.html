@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            min-width: 50%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML e CSS</h1>
+        <h2>Capítulo 21</h2>
+        <h3>Aula 8 - Mesclagem de células</h3>
+    </header>
+
+    <main>
+        <article>
+            <h1>Mesclagem de células</h1>
+            <p>A propriedade é adicionada dentro da <code>td</code> específica. Tipos de propriedades:</p>
+            <ul>
+                <li><code>colspan=""</code>: expansão de coluna.</li>
+                <li><code>rowspan=""</code>: expansão de linha.</li>
+            </ul>
+            <p>Depois, digitar entre aspas a quantidade de colunas ou linhas que a célula irá ocupar.</p>
+
+            <h2>Exemplo:</h2>
+            <table>
+                <tr>
+                    <td>A</td>
+                    <td colspan="2">B</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">D</td>
+                    <td>E</td>
+                    <td rowspan="2">F</td>
+                </tr>
+                <tr>
+                    <td>H</td>
+                </tr>
+                <tr>
+                    <td colspan="2">M</td>
+                </tr>
+            </table>
+        </article>
+    </main>
+</body>
+</html>
