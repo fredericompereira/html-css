@@ -27,18 +27,6 @@ main {
     border-radius: 10px;
 }
 
-article h1 {
-    font-size: 2em;
-}
-
-article h2 {
-    font-size: 1.7em;
-}
-
-article h3 {
-    font-size: 1.4em;
-}
-
 h1, h2, h3 {
     margin-bottom: 10px;
 }
@@ -47,7 +35,41 @@ h2, h3 {
     margin-top: 20px;
 }
 
+article h1 {
+    font-size: 2em;
+}
+
+table {
+    min-width: 70%;
+    min-height: 30vh;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+}
+
+footer {
+    max-width: 500px;
+    background-color: #f5d64e;
+    margin: auto;
+    padding: 15px 30px;
+    border-radius: 10px 10px 0 0;
+}
+
 p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #004369;
+}
+
+a:hover {
+    text-decoration: underline;
 }
