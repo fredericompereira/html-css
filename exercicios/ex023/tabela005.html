@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.4em;
+        }
+
+        caption, th {
+            background-color: #cccccc;
+        }
+
+        caption, th, td {
+            padding: 10px;
+            border: 1px solid #999999;
+            vertical-align: middle;
+        }
+
+        #cnome {
+            background-color: #f5d64e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML e CSS</h1>
+        <h2>Capítulo 21</h2>
+        <h3>Aula 13 – Agrupando colunas com colgroup</h3>
+    </header>
+
+    <main>
+        <article>
+            <h1>Exercício de tabela</h1>
+            <p>Para agrupar colunas, utilizar a tag <code>colgroup</code>.</p>
+            <p>Dentro dela, criar tags <code>col</code> para as colunas da tabela.</p>
+            <p>Para personalizar uma coluna, criar um <code>id</code> ou <code>class</code> e usar na folha de estilos.</p>
+            <p>Também é possível criar uma <code>col</code> para várias colunas usando a tag <code>span</code>.</p>
+
+            <table>
+                <colgroup>
+                    <col id="cnome">
+                    <col id="csexo">
+                    <col id="cidade">
+                    <col id="cprofissao">
+                </colgroup>
+                <caption>Cadastro</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Sexo</th>
+                        <th scope="col">Idade</th>
+                        <th scope="col">Profissão</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Ana Maria</td>
+                        <td>Feminino</td>
+                        <td>25</td>
+                        <td>Jornalista</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cláudio</td>
+                        <td>Masculino</td>
+                        <td>28</td>
+                        <td>Programador</td>
+                    </tr>
+                    <tr>
+                        <td>Gustavo</td>
+                        <td>Masculino</td>
+                        <td>42</td>
+                        <td>Professor</td>
+                    </tr>
+                    <tr>
+                        <td>Hélio</td>
+                        <td>Masculino</td>
+                        <td>19</td>
+                        <td>Vendedor</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>Feminino</td>
+                        <td>39</td>
+                        <td>Médica</td>
+                    </tr>
+                    <tr>
+                        <td>Otávio</td>
+                        <td>Masculino</td>
+                        <td>22</td>
+                        <td>Nutricionista</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </main>
+</body>
+</html>
