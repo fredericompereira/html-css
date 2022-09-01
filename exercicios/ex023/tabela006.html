@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            max-width: 100%;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.4em;
+        }
+
+        caption, th {
+            background-color: #cccccc;
+        }
+
+        caption, th, td {
+            padding: 10px;
+            border: 1px solid #999999;
+            vertical-align: middle;
+        }
+
+        tr:nth-child(2n) {
+            background-color: #eeeeee;
+        }
+
+        #container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML e CSS</h1>
+        <h2>Capítulo 21</h2>
+        <h3>Aula 14 – Tabelas responsivas</h3>
+    </header>
+
+    <main>
+        <article>
+            <h1>Tabelas em telas pequenas</h1>
+            <p>Criar uma <code>div</code> em volta da tabela, para servir de container.</p>
+            <p>Depois no CSS, usar a propriedade <code>overflow-x</code>, com o valor <code>auto</code>. Isso criará uma rolagem horizontal na tabela.</p>
+
+            <h2>Exemplo:</h2>
+            <div id="container">
+                <table>
+                    <caption>Tabelas responsivas</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Produto</th>
+                            <th colspan="12">Qtd. Vendida</th>
+                        </tr>
+                        <tr>
+                            <th>Jan</th>
+                            <th>Fev</th>
+                            <th>Mar</th>
+                            <th>Abr</th>
+                            <th>Mai</th>
+                            <th>Jun</th>
+                            <th>Jul</th>
+                            <th>Ago</th>
+                            <th>Set</th>
+                            <th>Out</th>
+                            <th>Nov</th>
+                            <th>Dez</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TV</td>
+                            <td>05</td>
+                            <td>05</td>
+                            <td>05</td>
+                            <td>08</td>
+                            <td>08</td>
+                            <td>08</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Celular</td>
+                            <td>05</td>
+                            <td>05</td>
+                            <td>05</td>
+                            <td>08</td>
+                            <td>08</td>
+                            <td>08</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Tablet</td>
+                            <td>05</td>
+                            <td>05</td>
+                            <td>05</td>
+                            <td>08</td>
+                            <td>08</td>
+                            <td>08</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Notebook</td>
+                            <td>05</td>
+                            <td>05</td>
+                            <td>05</td>
+                            <td>08</td>
+                            <td>08</td>
+                            <td>08</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>PC</td>
+                            <td>05</td>
+                            <td>05</td>
+                            <td>05</td>
+                            <td>08</td>
+                            <td>08</td>
+                            <td>08</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
