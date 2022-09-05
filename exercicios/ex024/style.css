@@ -55,3 +55,13 @@ p {
 code {
     background-color: #f5d64e;
 }
+
+a {
+    color: #00447c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
