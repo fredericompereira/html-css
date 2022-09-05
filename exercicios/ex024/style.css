@@ -70,3 +70,16 @@ a:hover {
     width: fit-content;
     background-color: #f56f4e;
 }
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul> ul {
+    padding-left: 30px;
+}
+
+ul > ul > ul {
+    padding-left: 30px;
+}

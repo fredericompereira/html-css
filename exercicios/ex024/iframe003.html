@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        iframe {
+            margin-bottom: 20px;
+            width: 100%;
+            height: 60vh;
+            box-shadow: 0 0 5px #777777;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML e CSS - Módulo 4</h1>
+        <h2>Capítulo 22</h2>
+        <h3>Aula 4 – Navegação no iframe</h3>
+    </header>
+
+    <main>
+        <article>
+            <h1>Navegando no iframe</h1>
+            <p>Para abrir links dentro de um iframe, usar as seguintes propriedades:</p>
+            <ul>
+                <li>Dentro do link - <code>target=""</code>.</li>
+                <li>Dentro do iframe - <code>name=""</code>.</li>
+            </ul>
+            <p>Dê um nome ao frame e insira-o dentro de <code>target</code>.</p>
+
+            <h2>Exemplo</h2>
+            <ul>
+                <li><a href="pags-extras/pag001.html" target="frame">1ª página</a></li>
+                <li><a href="pags-extras/pag002.html" target="frame">2ª página</a></li>
+                <li><a href="pags-extras/pag003.html" target="frame">3ª página</a></li>
+            </ul>
+
+            <iframe src="" name="frame" frameborder="0">
+                <p class="erro-iframe">Seu navegador não é compatível com iframe.</p>
+            </iframe>
+        </article>
+    </main>
+</body>
+</html>
