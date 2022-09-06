@@ -47,7 +47,7 @@ article h3 {
     font-size: 1.4em;
 }
 
-p {
+main p {
     font-size: 1.2em;
     margin-bottom: 20px;
 }
@@ -82,4 +82,18 @@ ul> ul {
 
 ul > ul > ul {
     padding-left: 30px;
+}
+
+footer {
+    max-width: 600px;
+    margin: auto;
+    padding: 15px 30px;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 5px #777777;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.1em;
 }
