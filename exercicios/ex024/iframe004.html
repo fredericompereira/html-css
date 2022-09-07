@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        iframe {
+            height: 35vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML e CSS - Módulo 4</h1>
+        <h2>Capítulo 22</h2>
+        <h3>Aula 7 – Tornando iframes mais seguros</h3>
+    </header>
+
+    <main>
+        <article>
+            <h1>Segurança do iframe</h1>
+            <p>Ao usar a propriedade <code>sandbox</code> dentro do iframe, é possível bloquear qualquer acesso de outros sites na sua página.</p>
+            <ul>
+                <li>O valor <code>sandbox</code> bloqueia todo tipo de acesso;</li>
+                <li>O valor <code>allow-same-origin</code> permite acesso de arquivos com a mesma origem (mesmo servidor);</li>
+                <li>O valor <code>allow-forms</code> permite uso de formulários;</li>
+                <li>O valor <code>allow-scripts</code> permite execução de scripts.</li>
+            </ul>
+            <p>Outra propriedade é a <code>referrerpolicy</code>. Com o valor <code>no-referrer</code>, o conteúdo no iframe não irá coletar nenhum dado do usuário.</p>
+
+            <h2>Exemplo</h2>
+            <iframe src="pags-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+                <p class="erro-iframe">Seu navegador não é compatível com iframe.</p>
+            </iframe>
+        </article>
+    </main>
+</body>
+</html>

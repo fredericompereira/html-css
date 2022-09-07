@@ -84,6 +84,13 @@ ul > ul > ul {
     padding-left: 30px;
 }
 
+iframe {
+    width: 100%;
+    box-shadow: 0 0 5px #777777;
+    border: 0;
+    border-radius: 10px;
+}
+
 footer {
     max-width: 600px;
     margin: auto;
