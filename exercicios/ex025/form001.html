@@ -6,17 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        caption {
+            font-size: 1.4em;
+        }
+
+        caption, th {
+            background-color: #cccccc;
+        }
+
+        caption, th, td {
+            padding: 10px;
+            border: 1px solid #999999;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Curso de HTML e CSS - Módulo 4</h1>
         <h2>Capítulo 24</h2>
         <h3>Aula 1 - Como criar formulários com HTML5</h3>
+        <h3>Aula 2 - Usar Label vai melhorar seus formulários</h3>
+        <h3>Aula 3 - Métodos GET e POST para formulários</h3>
     </header>
 
     <main>
         <article>
-            
+            <h1>Primeiro formulário</h1>
+            <h2>Criando o básico</h2>
+            <p>Tag para criar formulário: <code>form</code>.</p>
+            <p>Tag para criar campo de entrada de dados: <code>input</code>.</p>
+            <ul>
+                <li>A propriedade <code>name</code> é mais importante para HTML e PHP.</li>
+                <li>A propriedade <code>id</code> é mais importante para JavaScript.</li>
+            </ul>
+            <p>Tag para criar botão de enviar: <code>input:submit</code>.</p>
+
+            <h2>Configurações</h2>
+            <p>Para desligar a função de autocompletar, inserir a tag <code>autocomplete="off"</code> dentro de <code>form</code>.</p>
+            <p>Para enviar os dados de um formulário, usar a tag <code>action</code> dentro de <code>form</code>.</p>
+
+            <h2>Uso de labels</h2>
+            <p>Usar labels é importante porque ajuda os mecanismos de busca e navegadores a entenderem <strong>quais rótulos e campos são relacionados</strong>.</p>
+            <p>Para fazer a ligação entre um rótulo e um campo, usar a tag <code>label</code>. Depois, inserir o <code>id</code> do campo.</p>
+
+            <h2>Métodos GET e POST</h2>
+            <p>GET e POST são os métodos usados para enviar os dados de um formulários. Por padrão, o HTML usa o método GET.</p>
+            <p>O método GET <strong>exibe os dados</strong> enviados na URL do site.</p>
+            <p>O método POST <strong>esconde os dados</strong> da URL.</p>
+
+            <h3>Quando usar GET ou POST?</h3>
+
+            <table>
+                <thead>
+                    <th>GET</th>
+                    <th>POST</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Os dados não forem sensíveis (nome, sobrenome, peso etc).</td>
+                        <td>Os dados forem sensíveis (senha, número do cartão, endereço etc), para enviar fotos ou outro tipo de arquivo.</td>
+                    </tr>
+                    <tr>
+                        <td>Gerar URL compartilhável (igual o serviço de busca do Google, por exemplo).</td>
+                        <td>Se quiser que os dados não apareçam na URL do site.</td>
+                    </tr>
+                    <tr>
+                        <td>Enviar dados de até 3 mil bytes (aproximadamente 3 mil letras).</td>
+                        <td>Se os dados tiverem mais de 3 mil bytes.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Obs: a diferença de velocidade entre os dois <strong>não</strong> é mais um critério considerável de performance.</p>
+
+            <h2>Exemplo</h2>
+            <form method="post">
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome">
+                </p>
+                <p>
+                    <label for="isobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="isobrenome">
+                </p>
+                <input type="submit" value="Enviar" id="enviar">
+            </form>
         </article>
     </main>
 

@@ -66,17 +66,34 @@ a:hover {
     text-decoration: underline;
 }
 
-ul {
+ul, ol {
     padding-left: 20px;
     margin-bottom: 20px;
 }
 
-ul> ul {
+ul > ul {
     padding-left: 30px;
 }
 
 ul > ul > ul {
     padding-left: 30px;
+}
+
+form {
+    width: fit-content;
+    padding: 20px;
+    background-color: #cccccc;
+    border: 1px solid #999999;
+    border-radius: 15px;
+}
+
+#inome, #isobrenome {
+    font-size: 1em;
+}
+
+#enviar {
+    padding: 5px;
+    font-size: 1.2em;
 }
 
 footer {
