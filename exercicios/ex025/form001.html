@@ -6,27 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-
-        caption {
-            font-size: 1.4em;
-        }
-
-        caption, th {
-            background-color: #cccccc;
-        }
-
-        caption, th, td {
-            padding: 10px;
-            border: 1px solid #999999;
-            vertical-align: middle;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -87,16 +66,16 @@
             <p>Obs: a diferença de velocidade entre os dois <strong>não</strong> é mais um critério considerável de performance.</p>
 
             <h2>Exemplo</h2>
-            <form method="post">
+            <form action="cadastro.php" method="post">
                 <p>
                     <label for="inome">Nome:</label>
-                    <input type="text" name="nome" id="inome">
+                    <input type="text" name="nome" id="inome" class="campo-texto">
                 </p>
                 <p>
                     <label for="isobrenome">Sobrenome:</label>
-                    <input type="text" name="sobrenome" id="isobrenome">
+                    <input type="text" name="sobrenome" id="isobrenome" class="campo-texto">
                 </p>
-                <input type="submit" value="Enviar" id="enviar">
+                <input type="submit" value="Enviar" id="enviar" class="botao-enviar">
             </form>
         </article>
     </main>

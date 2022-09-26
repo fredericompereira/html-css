@@ -79,6 +79,26 @@ ul > ul > ul {
     padding-left: 30px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+caption {
+    font-size: 1.4em;
+}
+
+caption, th {
+    background-color: #cccccc;
+}
+
+caption, th, td {
+    padding: 10px;
+    border: 1px solid #999999;
+    vertical-align: middle;
+}
+
 form {
     width: fit-content;
     padding: 20px;
@@ -87,11 +107,12 @@ form {
     border-radius: 15px;
 }
 
-#inome, #isobrenome {
+.campo-texto {
     font-size: 1em;
 }
 
-#enviar {
+.botao-enviar, .botao-limpar {
+    margin-right: 10px;
     padding: 5px;
     font-size: 1.2em;
 }

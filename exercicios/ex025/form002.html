@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML e CSS - Módulo 4</h1>
+        <h2>Capítulo 24</h2>
+        <h3>Aula 4 - Criando caixas de texto e de senha</h3>
+    </header>
+
+    <main>
+        <h1>Teste de formulário</h1>
+
+        <h2>Tipos de campos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de campo</th>
+                    <th>Tag em HTML</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Entrada de senhas</td>
+                    <td><code>input type="password"</code></td>
+                </tr>
+                <tr>
+                    <td>Botão de limpar dados</td>
+                    <td><code>input type="reset"</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Campos obrigatórios</h2>
+        <p>Para tornar campos do formulário obrigatórios, inserir o atributo <code>required</code> dentro de cada <code>input</code> escolhido.</p>
+
+        <h2>Definir tamanho do conteúdo</h2>
+        <p>Para definir o tamanho mínimo, usar a tag <code>minlength=""</code>.</p>
+        <p>Para definir o tamanho máximo, usar a tag <code>maxlength=""</code>.</p>
+
+        <h2>Definir tamanho da caixa</h2>
+        <p>Para definir o tamanho da caixa (em caracteres), usar a tag <code>size=""</code>.</p>
+
+        <h2>Exemplo</h2>
+        <form action="cadastro.php" method="post">
+            <p>
+                <label for="iusuario">Usuário:</label>
+                <input type="text" name="usuario" id="iusuario" class="campo-texto" required>
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" class="campo-texto" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar" class="botao-enviar">
+                <input type="reset" value="Limpar" class="botao-limpar">
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Site criado por <a href="https://github.com/fredericompereira" target="_blank" rel="noopener noreferrer">Frederico Pereira</a></p>
+    </footer>
+</body>
+</html>
