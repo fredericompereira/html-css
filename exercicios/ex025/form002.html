@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -47,15 +47,21 @@
         <h2>Definir tamanho da caixa</h2>
         <p>Para definir o tamanho da caixa (em caracteres), usar a tag <code>size=""</code>.</p>
 
+        <h2>Usando placeholder nos campos</h2>
+        <p>Pode ser usado para dar dicas ao usuário. Tag <code>placeholder=""</code>.</p>
+
+        <h2>Especificar tipo de caixa para o autocomplete</h2>
+        <p>Para identificar os tipos de caixas e melhorar o autocompletar do navegador, usar a tag <code>autocomplete</code> dentro de cada campo.</p>
+
         <h2>Exemplo</h2>
-        <form action="cadastro.php" method="post">
+        <form action="cadastro.php" method="post" autocomplete="on">
             <p>
                 <label for="iusuario">Usuário:</label>
-                <input type="text" name="usuario" id="iusuario" class="campo-texto" required>
+                <input type="text" name="usuario" id="iusuario" class="campo-texto" required minlength="3" maxlength="20" size="12" placeholder="nome de usuário" autocomplete="username">
             </p>
             <p>
                 <label for="isenha">Senha:</label>
-                <input type="password" name="senha" id="isenha" class="campo-texto" required>
+                <input type="password" name="senha" id="isenha" class="campo-texto" required minlength="6" maxlength="20" size="12" placeholder="mín. 6 caracteres" autocomplete="current-password">
             </p>
             <p>
                 <input type="submit" value="Enviar" class="botao-enviar">
