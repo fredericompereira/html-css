@@ -107,8 +107,22 @@ form {
     border-radius: 15px;
 }
 
+form fieldset {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+fieldset legend {
+    font-size: 1.4em;
+}
+
 form label {
     cursor: pointer;
+    margin-left: 10px;
+}
+
+.radio, .checkbox {
+    margin-bottom: 10px;
 }
 
 .campo-texto, .campo-numero {
@@ -119,6 +133,7 @@ form label {
     margin-right: 10px;
     padding: 10px;
     font-size: 1em;
+    cursor: pointer;
 }
 
 footer {

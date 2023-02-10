@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML e CSS - Módulo 4</h1>
+        <h2>Capítulo 24</h2>
+        <h3>Aula 8 - Checkbox e radio button</h3>
+    </header>
+
+    <main>
+        <h1>Teste de formulário</h1>
+
+        <h2>Tipos de campos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de campo</th>
+                    <th>Tag em HTML</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Radio button (escolher só uma opção)</td>
+                    <td><code>input type="radio"</code></td>
+                </tr>
+                <tr>
+                    <td>Checkbox (marcar mais de uma opção)</td>
+                    <td><code>input type="checkbox"</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Obs: Dica para evitar um erro comum</h2>
+        <p>Um erro comum ao usar <code>radio</code> é permitir que sejam selecionadas mais de uma opção. Para evitar isso, usar o mesmo <code>name</code> para todas as opções.</p>
+
+        <h2>Definir uma opção como marcada</h2>
+        <p>Dentro do <code>input</code>, usar a tag <code>checked</code>.</p>
+
+        <h2>Exemplo</h2>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="ismasculino" value="m" class="radio"><label for="ismasculino">Masculino</label><br>
+                <input type="radio" name="sexo" id="isfeminino" value="f" class="radio"><label for="isfeminino">Feminino</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Esporte favorito</legend>
+                <input type="checkbox" name="efutebol" id="iefutebol" class="checkbox" checked><label for="iefutebol">Futebol</label><br>
+                <input type="checkbox" name="ebasquete" id="iebasquete" class="checkbox"><label for="iebasquete">Basquete</label><br>
+                <input type="checkbox" name="enatacao" id="ienatacao" class="checkbox"><label for="ienatacao">Natação</label><br>
+                <input type="checkbox" name="etenis" id="ietenis" class="checkbox"><label for="ietenis">Tênis</label><br>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar" class="botao-enviar">
+                <input type="reset" value="Limpar" class="botao-limpar">
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Site criado por <a href="https://github.com/fredericompereira" target="_blank" rel="noopener noreferrer">Frederico Pereira</a>.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML e CSS - Módulo 4</h1>
+        <h2>Capítulo 24</h2>
+        <h3>Aula 7 - Formulários com telefone e e-mail</h3>
+    </header>
+
+    <main>
+        <h1>Teste de formulário</h1>
+
+        <h2>Tipos de campos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de campo</th>
+                    <th>Tag em HTML</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>E-mail</td>
+                    <td><code>input type="email"</code></td>
+                </tr>
+                <tr>
+                    <td>Telefone</td>
+                    <td><code>input type="tel"</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Expressões regulares</h2>
+        <p>É possível definir padrões para valores inseridos nos campos usando expressões regulares (RegEx).</p>
+        <p>Para isso, usar a tag <code>pattern=""</code>. Dentro da tag, usar <code>^</code> para iniciar uma expressão e <code>$</code> para terminá-la.</p>
+
+        <h2>Agrupamento de itens</h2>
+        <p>Para agrupar itens dentro do formulário, usar a tag <code>fieldset</code>. Dentro dela, é possível criar uma legenda com a tag <code>legend</code>.</p>
+
+        <h2>Exemplo</h2>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" class="campo-texto" placeholder="Nome completo" autocomplete="name" minlength="4" maxlength="30" required>
+                </p>
+                <p>
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" class="campo-texto" placeholder="Seu e-mail principal" autocomplete="email" required>
+                </p>
+                <p>
+                    <label for="itel">Telefone:</label>
+                    <input type="tel" name="tel" id="itel" class="campo-numero" placeholder="DDD 91234-5678" autocomplete="tel" pattern="^[0-9]{2} [0-9]{4,5}-[0-9]{4}$" required>
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar" class="botao-enviar">
+                <input type="reset" value="Limpar" class="botao-limpar">
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Site criado por <a href="https://github.com/fredericompereira" target="_blank" rel="noopener noreferrer">Frederico Pereira</a>.</p>
+    </footer>
+</body>
+</html>
