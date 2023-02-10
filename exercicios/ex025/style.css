@@ -107,7 +107,11 @@ form {
     border-radius: 15px;
 }
 
-.campo-texto {
+form label {
+    cursor: pointer;
+}
+
+.campo-texto, .campo-numero {
     font-size: 1em;
 }
 

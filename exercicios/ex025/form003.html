@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML e CSS - Módulo 4</h1>
+        <h2>Capítulo 24</h2>
+        <h3>Aula 5 - Elementos number, month, date e time</h3>
+    </header>
+
+    <main>
+        <h1>Teste de formulário</h1>
+
+        <h2>Tipos de campos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de campo</th>
+                    <th>Tag em HTML</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Números</td>
+                    <td><code>input type="number"</code></td>
+                </tr>
+                <tr>
+                    <td>Mês e ano</td>
+                    <td><code>input type="month"</code></td>
+                </tr>
+                <tr>
+                    <td>Dia, mês e ano</td>
+                    <td><code>input type="date"</code></td>
+                </tr>
+                <tr>
+                    <td>Hora</td>
+                    <td><code>input type="time"</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Atributos de valor mínimo e máximo de número</h2>
+        <p>Os atributos <code>min=""</code> e <code>max=""</code> definem os valores mínimo e máximo para <code>input type="number"</code>.</p>
+
+        <h2>Atributo para intervalo de número</h2>
+        <p>O atributo <code>step=""</code> define de quanto em quanto o número irá aumentar ou diminuir, como por exemplo de 0,5 para 1.</p>
+
+        <h2>Atributo para campo já preenchido</h2>
+        <p>O atributo <code>value=""</code> define um valor para o campo já ser preenchido.</p>
+
+        <h2>Exemplo</h2>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" class="campo-texto" minlength="6" maxlength="30" size="20" required placeholder="Nome completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="imedia">Média:</label>
+                <input type="number" name="media" id="imedia" class="campo-numero" min="0" max="10" step="0.1" value="6" required placeholder="0 a 10">
+            </p>
+            <p>
+                <label for="imes">Período letivo:</label>
+                <input type="month" name="mes" id="imes" class="campo-numero" required>
+            </p>
+            <p>
+                <label for="idata">Data da prova:</label>
+                <input type="date" name="data" id="idata" class="campo-numero" required>
+            </p>
+            <p>
+                <label for="ihora">Horário da prova:</label>
+                <input type="time" name="hora" id="ihora" class="campo-numero" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar" class="botao-enviar">
+                <input type="reset" value="Limpar" class="botao-limpar">
+            </p>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Site criado por <a href="https://github.com/fredericompereira" target="_blank" rel="noopener noreferrer">Frederico Pereira</a>.</p>
+    </footer>
+</body>
+</html>
