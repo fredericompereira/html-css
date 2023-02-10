@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML e CSS - Módulo 4</h1>
+        <h2>Capítulo 24</h2>
+        <h3>Aula 10 - Select, datalist e textarea</h3>
+    </header>
+
+    <main>
+        <h1>Teste de formulário</h1>
+
+        <h2>Tipos de campos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de campo</th>
+                    <th>Tag em HTML</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Seletor de item</td>
+                    <td><code>select</code></td>
+                </tr>
+                <tr>
+                    <td>Lista de dados (permite digitar)</td>
+                    <td><code>datalist</code></td>
+                </tr>
+                <tr>
+                    <td>Caixa de mensagem</td>
+                    <td><code>textarea</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Criar opções na lista</h2>
+        <p>Dentro da tag <code>select</code> ou <code>datalist</code>, usar a tag <code>option</code> para criar itens.</p>
+        <p>É possível agrupar as opções de uma lista por meio da tag <code>optgroup</code>. Dentro dela, usar <code>label</code> para identificar o grupo.</p>
+        <p>Para deixar um item pré-selecionado, usar a tag <code>selected</code>.</p>
+        <p>Para exibir os itens de uma <code>datalist</code>, é necessário criar um <code>input type="text"</code> e usar a tag <code>list=""</code> para fazer referência ao id da lista.</p>
+
+        <h2>Obs</h2>
+        <p>Ao usar a tag <code>textarea</code>, não se deve usar o método <code>get</code>.</p>
+
+        <h2>Exemplo</h2>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="iestado">Estado:</label>
+                <select name="estado" id="iestado" class="lista">
+                    <option value="" selected disabled>-- Escolha um estado --</option>
+                    <optgroup label="Nordeste">
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                    </optgroup>
+                    
+                    <optgroup label="Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprofissao">Profissão:</label>
+                <input type="text" name="profissao" id="iprofissao" class="campo-texto" size="15" list="lprofissao">
+                <datalist id="lprofissao">
+                    <option value="MED">Médico</option>
+                    <option value="PRO">Professor</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="JOR">Jornalista</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imensagem">Mensagem:</label><br>
+                <textarea name="mensagem" id="imensagem" cols="40" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar" class="botao-enviar">
+                <input type="reset" value="Limpar" class="botao-limpar">
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Site criado por <a href="https://github.com/fredericompereira" target="_blank" rel="noopener noreferrer">Frederico Pereira</a>.</p>
+    </footer>
+</body>
+</html>

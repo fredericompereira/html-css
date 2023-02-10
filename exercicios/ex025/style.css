@@ -125,13 +125,24 @@ form label {
     margin-bottom: 10px;
 }
 
+.lista {
+    font-size: 0.9em;
+}
+
+textarea {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+}
+
 .campo-texto, .campo-numero {
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .botao-enviar, .botao-limpar {
     margin-right: 10px;
-    padding: 10px;
+    padding: 5px 10px;
     font-size: 1em;
     cursor: pointer;
 }
