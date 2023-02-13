@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML e CSS - Módulo 4</h1>
+        <h2>Capítulo 24</h2>
+        <h3>Aula 11 - Elemento output em formulários</h3>
+    </header>
+    <main>
+        <h1>Teste de formulário</h1>
+        <h2>Exemplo</h2>
+        <form action="cadastro.php" method="get" autocomplete="on" style="width: 260px;">
+            <p>
+                <label for="ivolume">Volume:</label>
+                <input type="range" name="volume" id="ivolume" value="0" oninput="inivel.innerHTML = Number(ivolume.value)">
+                <output name="nivel" id="inivel">0</output>
+            </p>
+            <br>
+            <p>
+                <input type="submit" value="Enviar" class="botao-enviar">
+                <input type="reset" value="Limpar" class="botao-limpar" onclick="inivel.innerHTML = 0">
+            </p>
+        </form>
+    </main>
+    <footer>
+        <p>Site criado por <a href="https://github.com/fredericompereira" target="_blank" rel="noopener noreferrer">Frederico Pereira</a>.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML e CSS - Módulo 4</h1>
+        <h2>Capítulo 24</h2>
+        <h3>Aula 11 - Elemento output em formulários</h3>
+    </header>
+    <main>
+        <h1>Teste de formulário</h1>
+        <h2>Exemplo</h2>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Calcular idade</legend>
+                <p>
+                    <label for="iano">Em que ano você nasceu?</label>
+                    <input type="number" name="ano" id="iano" class="campo-numero" min="1900" max="2023">
+                </p>
+                <p>
+                    <input type="button" value="Calcular" id="icalcular" class="botao-enviar" onclick="calcIdade()">
+                </p>
+                <p>
+                   <label for="iidade">Sua idade é:</label>
+                   <output name="idade" id="iidade"></output>
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar" class="botao-enviar">
+                <input type="reset" value="Limpar" class="botao-limpar" onclick="limparIdade()">
+            </p>
+        </form>
+
+        <script>
+            function calcIdade() {
+                let atual = new Date().getFullYear()
+                iidade.innerHTML = atual - iano.value + ' anos'
+            }
+
+            function limparIdade() {
+                iidade.innerHTML = ''
+            }
+        </script>
+    </main>
+    <footer>
+        <p>Site criado por <a href="https://github.com/fredericompereira" target="_blank" rel="noopener noreferrer">Frederico Pereira</a>.</p>
+    </footer>
+</body>
+</html>

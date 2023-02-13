@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de HTML e CSS - Módulo 4</h1>
+        <h2>Capítulo 24</h2>
+        <h3>Aula 11 - Elemento output em formulários</h3>
+    </header>
+    <main>
+        <h1>Teste de formulário</h1>
+
+        <h2>Elemento output</h2>
+        <p>Usado para exibir saída de valores. Tag em HTML: <code>output</code>.</p>
+        <p>Este elemento não é para enviar dados, apenas para mostrá-los.</p>
+
+        <h2>Obs</h2>
+        <p>Será usado JavaScript para mostrar o funcionamento do recurso.</p>
+
+        <h2>Exemplo</h2>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Digite dois números</legend>
+                <p>
+                    <label for="inumero1">1º número:</label>
+                    <input type="number" name="numero1" id="inumero1" class="campo-numero" min="0" max="10000" required>
+                </p>
+                <p>
+                    <label for="inumero2">2º número:</label>
+                    <input type="number" name="numero2" id="inumero2" class="campo-numero" min="0" max="10000" required>
+                </p>
+                <p>
+                    <input type="button" value="Calcular" id="icalcular" class="botao-enviar" onclick="isoma.innerHTML = Number(inumero1.value) + Number(inumero2.value)">
+                </p>
+                <p>
+                    <label for="isoma">Soma:</label>
+                    <output name="soma" id="isoma"></output>
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar" class="botao-enviar">
+                <input type="reset" value="Limpar" class="botao-limpar" onclick="isoma.innerHTML = ''">
+            </p>
+        </form>
+
+    </main>
+    <footer>
+        <p>Site criado por <a href="https://github.com/fredericompereira" target="_blank" rel="noopener noreferrer">Frederico Pereira</a>.</p>
+    </footer>
+</body>
+</html>
