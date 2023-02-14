@@ -1,3 +1,7 @@
 @charset "UTF-8";
 
 /* Dispositivo em modo retrato (portrait) */
+
+body {
+    background-image: url(../imagens/logo-portrait.svg);
+}
