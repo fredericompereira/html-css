@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* Estilo para telas */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1em;
+    background-color: #ddd;
+}
+
+header {
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+nav {
+    padding: 10px;
+    background-color: #bbb;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+main {
+    max-width: 900px;
+    background-color: #fff;
+    margin: 0px auto;
+}
+
+article {
+    padding: 50px;
+}
+
+article h2 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+article p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #bbb;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 18px;
+    text-align: center;
+}
+
+footer a {
+    color: #004381;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
