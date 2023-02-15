@@ -13,6 +13,7 @@ body {
     height: 100vh;
     font-family: 'Source Serif Pro', serif;
     background-color: #005080;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
