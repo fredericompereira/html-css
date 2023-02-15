@@ -2,3 +2,69 @@
 
 /* Todas as demais mídias */
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* Impressão */
+@media print {
+    body {
+        background: none;
+        font-family: 'Source Code Pro', monospace;
+    }
+
+    main {
+        border: 1px solid black;
+    }
+
+    main::after {
+        content: 'Esta impressão foi feita através do site github.com/fredericompereira';
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    #phone { display: none; }
+    #print { display: block; }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    #phone { display: none; }
+    #tablet { display: block; }
+}
+
+/* Desktops */
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    #tablet { display: none; }
+    #pc { display: block; }
+}
+
+/* Telas grandes */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    #pc { display: none; }
+    #tv { display: block; }
+}
