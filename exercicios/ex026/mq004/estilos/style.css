@@ -35,6 +35,17 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2::after {
+    content: 'Versão para smartphones';
+}
+
 img {
     display: block;
     margin: auto;
