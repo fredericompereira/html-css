@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* Versão mobile first */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background: url(../imagens/back-phone.jpg) center no-repeat;
+    background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+    width: 90vw;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 30px;
+    background-color: #ffffffbb;
+    border-radius: 15px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#phone { display: block; }
+#tablet, #print, #pc, #tv { display: none; }
