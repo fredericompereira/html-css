@@ -26,3 +26,19 @@ h1 {
     text-align: center;
     text-shadow: 2px 2px 0px #002F4D;
 }
+
+/* Dispositivo em modo retrato (portrait) */
+
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url(../imagens/logo-portrait.svg);
+    }
+}
+
+/* Dispositivo em modo paisagem (landscape) */
+
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(../imagens/logo-landscape.svg);
+    }
+}
