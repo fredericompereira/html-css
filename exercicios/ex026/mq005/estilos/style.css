@@ -8,91 +8,121 @@
 }
 
 :root {
-    --cor1: #a3a3a3;
-    --cor2: #636363;
-    --cor3: #171717;
-    --cor4: #f5ab18;
+    --cor1: #B3B3B3;
+    --cor2: #333333;
+    --cor3: #f5ab18;
     --fonte-titulo: 'Press Start 2P', monospace;
     --fonte-texto: 'IBM Plex Mono', monospace;
 }
 
 body {
+    background-color: var(--cor1);
     font-family: var(--fonte-texto);
 }
 
 a {
-    color: var(--cor4);
+    color: var(--cor3);
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 header {
-    padding: 30px 20px 10px 20px;
-    background-color: var(--cor3);
+    padding: 20px;
+    background-color: #000000;
+    font-family: var(--fonte-titulo);
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 20px;
-    color: var(--cor4);
-    font-family: var(--fonte-titulo);
+header h1 {
+    margin-right: 10px;
+    display: inline-block;
+    color: var(--cor3);
+    font-size: 1.5em;
     font-weight: normal;
-    font-size: 2em;
     text-transform: uppercase;
 }
 
 #botao-menu {
-    font-size: 32px;
-    color: var(--cor4);
+    cursor: pointer;
+    color: var(--cor3);
+    font-size: 28px;
 }
 
-nav {
+#menu {
     display: none;
-}
-
-ul {
-    text-align: center;
-}
-
-li {
-    padding: 10px;
-    list-style-type: none;
-    text-transform: uppercase;
+    margin-top: 20px;
     background-color: var(--cor2);
 }
 
-main {
-    background-color: var(--cor1);
+li {
+    padding: 15px;
+    list-style-type: none;
+    text-transform: uppercase;
 }
 
-article {
-    max-width: 700px;
+li:hover {
+    color: #000000;
+    background-color: var(--cor3);
+}
+
+main {
+    max-width: 800px;
     margin: auto;
-    padding: 40px 20px 10px 20px;
+    padding: 50px 20px 20px 20px;
     background-color: #ffffff;
 }
 
-article p {
+main h1, main h2, main h3 {
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+}
+
+main h1 {
+    margin-bottom: 50px;
+    font-size: 2em;
+}
+
+main h2 {
     margin-bottom: 30px;
+    font-size: 1.5em;
     line-height: 1.5;
 }
 
-h2 {
+main h3 {
+    margin: 40px 0px 10px 0px;
+    font-size: 1.25em;
+}
+
+main img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 5px solid #000000;
+
+}
+
+main p {
     margin-bottom: 30px;
-    font-family: var(--fonte-titulo);
-    font-size: 1.5em;
-    font-weight: normal;
+    font-size: 1.125em;
+    line-height: 1.5;
+}
+
+main a {
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+main a:hover, footer a:hover {
+    text-decoration: underline;
 }
 
 footer {
     padding: 30px 20px;
-    background-color: var(--cor3);
+    background-color: #000000;
     text-align: center;
 }
 
 footer p {
     color: #ffffff;
+    font-family: var(--fonte-titulo);
+    line-height: 1.5;
 }

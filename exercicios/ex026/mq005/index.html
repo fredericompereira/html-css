@@ -10,30 +10,58 @@
 </head>
 <body>
      <header>
-        <h1>Tech News</h1>
-        <span class="material-symbols-outlined" id="botao-menu">menu</span>
+        <h1><a href="index.html">Tech News</a></h1>
+        <span class="material-symbols-outlined" id="botao-menu" onclick="clickMenu()">menu</span>
         <nav id="menu">
             <ul>
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-                <li><a href="#">Item 4</a></li>
-                <li><a href="#">Item 5</a></li>
+                <a href="#"><li>Mais lidas</li></a>
+                <a href="#"><li>Novidades</li></a>
+                <a href="#"><li>Assuntos</li></a>
+                <a href="#"><li>Sobre</li></a>
+                <a href="#"><li>Contato</li></a>
             </ul>
         </nav>
      </header>
 
      <main>
+        <h1>Bem-vindo!</h1>
         <article>
-            <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rem eligendi quos maiores, repellendus inventore, expedita reiciendis eveniet dignissimos deleniti hic tempora atque velit eius repudiandae veritatis optio sed officia quam labore ut soluta deserunt eaque! Eaque dignissimos ex officia?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea provident incidunt quas! Error eaque nisi quae quia voluptatum? Nemo fugit voluptatem vel itaque totam, mollitia a eos minima? Excepturi recusandae dignissimos dolorum similique quis iure pariatur accusamus quibusdam reiciendis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam fugit magni officia neque aspernatur voluptatibus, dolore aliquam repudiandae culpa. Quo explicabo incidunt, voluptatum fugit, amet autem dolore eaque dignissimos sapiente voluptas reiciendis eum! Neque corrupti iste modi architecto laborum.</p>
+            <picture>
+                <source media="(min-width: 480px)" srcset="imagens/foto-celular-840x560.jpg" type="image/jpg">
+                <img src="imagens/foto-celular-480x320.jpg" alt="Foto celular">
+            </picture>
+            <h2>Como saber se um celular é roubado</h2>
+            <p>Comprar um celular com revendedor ou em lojas que não sejam confiáveis pode trazer prejuízo ao consumidor. Para evitar a aquisição de um produto em situação ilegal, há como saber se um celular é roubado conferindo a nota fiscal e consultando a identificação IMEI.</p>
+            <p>Um dos sinais que podem indicar que um celular é roubado é o estado dos acessórios que acompanham o produto, como cabos, carregadores e adaptadores danificados ou incompatíveis. Qualquer suspeita sobre a autenticidade e legalidade de um aparelho, consulte os sites da Anatel e da Fazenda.</p>
+            
+            <h3>Consulte a situação do IMEI</h3>
+            <p>O IMEI é o número de identificação do celular. Esse código de 15 dígitos pode ser encontrado na nota fiscal, na caixa original do dispositivo ou ligando para *#06# através do aparelho.</p>
+            <p>Quando um celular é roubado, o dono do aparelho pode bloquear o IMEI através da operadora de telefonia ou com o boletim de ocorrência. Para saber se o dispositivo está em situação legal, é possível fazer uma consulta do IMEI pelo site da Anatel.</p>
+            <p>Se o IMEI estiver em situação regular, será exibida a mensagem: “Até o momento o IMEI informado não possui restrições de uso”.</p>
+            <p>Caso o IMEI esteja bloqueado, a mensagem informará que “o IMEI informado está impedido por perda, roubo ou furto”. Nessa situação, o consumidor deve entrar em contato com o estabelecimento comercial onde comprou o aparelho e pedir a troca ou o ressarcimento.</p>
+            <p>Apenas o solicitante do impedimento do IMEI pode pedir o desbloqueio (caso reencontre o aparelho). Para isso, o dono do celular precisa entrar em contato com a operadora ou o órgão de Segurança Pública que efetuou o bloqueio e apresentar a nota fiscal.</p>
+
+            <h3>Verifique a nota fiscal</h3>
+            <p>A nota fiscal é a melhor garantia do consumidor para reivindicar seus direitos na compra de produtos irregulares. As notas emitidas pelas lojas ficam registradas no banco de dados do governo, e é possível verificar o documento pelo site da Fazenda.</p>
+            <p>Se a loja ou vendedor não fornecerem nota fiscal, a atenção precisa ser redobrada. Verifique, converse e solicite o máximo de informações, e se possível teste o celular pessoalmente.</p>
+
+            <p>Fonte: <a href="https://canaltech.com.br/smartphone/como-saber-se-um-celular-e-roubado-123814/" target="_blank" rel="noopener noreferrer">Canaltech</a></p>
         </article>
      </main>
 
      <footer>
-        <p>Site desenvolvido por <a href="https://github.com/fredericompereira" target="_blank" rel="noopener noreferrer">Frederico Pereira</a></p>
+        <p>Site criado por <a href="https://github.com/fredericompereira" target="_blank" rel="noopener noreferrer">Frederico Pereira</a></p>
      </footer>
+
+     <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            }
+            else {
+                menu.style.display = 'block'
+            }
+        }
+     </script>
 </body>
 </html>
