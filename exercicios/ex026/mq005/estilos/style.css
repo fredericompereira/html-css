@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: #a3a3a3;
+    --cor2: #636363;
+    --cor3: #171717;
+    --cor4: #f5ab18;
+    --fonte-titulo: 'Press Start 2P', monospace;
+    --fonte-texto: 'IBM Plex Mono', monospace;
+}
+
+body {
+    font-family: var(--fonte-texto);
+}
+
+a {
+    color: var(--cor4);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    padding: 30px 20px 10px 20px;
+    background-color: var(--cor3);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: var(--cor4);
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#botao-menu {
+    font-size: 32px;
+    color: var(--cor4);
+}
+
+nav {
+    display: none;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    padding: 10px;
+    list-style-type: none;
+    text-transform: uppercase;
+    background-color: var(--cor2);
+}
+
+main {
+    background-color: var(--cor1);
+}
+
+article {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px 20px 10px 20px;
+    background-color: #ffffff;
+}
+
+article p {
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+footer {
+    padding: 30px 20px;
+    background-color: var(--cor3);
+    text-align: center;
+}
+
+footer p {
+    color: #ffffff;
+}
