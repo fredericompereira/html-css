@@ -126,6 +126,28 @@ main p {
     line-height: 1.5;
 }
 
+#mais {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--cor3);
+    color: #000000;
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    font-size: 1em;
+}
+
+#mais:hover {
+    cursor: pointer;
+    background-color: #000000;
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+#detalhes {
+    display: none;
+}
+
 main a {
     color: var(--cor2);
     font-weight: bold;
