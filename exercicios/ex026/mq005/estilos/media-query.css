@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 0;
+        position: static;
+    }
+
+    header h1 {
+        margin: 20px 0px;
+    }
+
+    #abrir, #fechar {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        position: static;
+    }
+
+    #menu ul {
+        margin: 0;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+
+    #menu a {
+        padding: 15px;
+    }
+
+    main {
+        max-width: 800px;
+        margin: auto;
+        padding: 50px 50px 20px 50px;
+    }
+}
