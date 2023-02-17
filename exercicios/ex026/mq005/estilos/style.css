@@ -21,11 +21,14 @@ body {
 }
 
 a {
-    color: var(--cor3);
     text-decoration: none;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 20px;
     background-color: #000000;
     font-family: var(--fonte-titulo);
@@ -41,25 +44,43 @@ header h1 {
     text-transform: uppercase;
 }
 
-#botao-menu {
+header a {
+    color: var(--cor3);
+}
+
+#abrir, #fechar {
     cursor: pointer;
     color: var(--cor3);
     font-size: 28px;
 }
 
-#menu {
+#fechar {
     display: none;
-    margin-top: 20px;
-    background-color: var(--cor2);
 }
 
-li {
-    padding: 15px;
+#menu {
+    position: fixed;
+    top: 68px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background-color: #000000;
+}
+
+#menu ul {
+    margin: 0px 20px 20px 20px;
+    background-color: var(--cor2);
     list-style-type: none;
+}
+
+#menu a {
+    padding: 20px;
+    display: block;
     text-transform: uppercase;
 }
 
-li:hover {
+#menu a:hover {
     color: #000000;
     background-color: var(--cor3);
 }
@@ -67,6 +88,7 @@ li:hover {
 main {
     max-width: 800px;
     margin: auto;
+    margin-top: 68px;
     padding: 50px 20px 20px 20px;
     background-color: #ffffff;
 }
@@ -124,5 +146,10 @@ footer {
 footer p {
     color: #ffffff;
     font-family: var(--fonte-titulo);
+    font-size: 0.875em;
     line-height: 1.5;
+}
+
+footer a {
+    color: var(--cor3);
 }
