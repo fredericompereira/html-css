@@ -21,25 +21,40 @@ header, main {
     display: flex;
 }
 
+.row {
+    flex-direction: row;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
 .item {
     background-color: hsl(30, 70%, 70%);
     margin: 1rem;
     text-align: center;
-    max-width: fit-content;
 }
 
-#row {
-    flex-direction: row;
+.auto {
+    flex: auto;
 }
 
-#row-reverse {
-    flex-direction: row-reverse;
+.nowrap {
+    flex-wrap: nowrap;
 }
 
-#column {
-    flex-direction: column;
+.wrap {
+    flex-wrap: wrap;
 }
 
-#column-reverse {
-    flex-direction: column-reverse;
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.row-wrap {
+    flex-flow: row wrap;
+}
+
+.row-reverse-wrap {
+    flex-flow: row-reverse wrap;
 }

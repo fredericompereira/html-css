@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Flexible Box CSS</h1>
+        <h2>Aula 3 - Empacotamento e Fluxo no Flexbox CSS</h2>
+    </header>
+    <main>
+        <h3>Empacotamento <code>flex-wrap</code></h3>
+
+        <p><strong>Direção em linha <code>flex-direction: row</code></strong></p>
+        <p><code>nowrap</code> - valor padrão, sem quebra.</p>
+        <div class="container row nowrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        
+        <p><code>wrap</code> - com quebra (no sentido do <strong>cross-axis</strong>).</p>
+        <div class="container row wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+
+        <p><code>wrap-reverse</code> - com quebra (no sentido oposto do <strong>cross-axis</strong>).</p>
+        <div class="container row wrap-reverse">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+
+        <p><strong>Direção em linha reversa <code>flex-direction: row-reverse</code></strong></p>
+        <p><code>nowrap</code></p>
+        <div class="container row-reverse nowrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        
+        <p><code>wrap</code></p>
+        <div class="container row-reverse wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+
+        <p><code>wrap-reverse</code></p>
+        <div class="container row-reverse wrap-reverse">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+
+        <h3>Fluxo <code>flex-flow</code></h3>
+        <p>Shorthand para: <code>flex-direction</code> + <code>flex-wrap</code></p>
+        <p><strong>Obs:</strong> Recomendação de uso da W3C.</p>
+
+        <p><code>row wrap</code></p>
+        <div class="container row-wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+
+
+        <p><code>row wrap</code> + <code>flex:auto</code></p>
+        <div class="container row-wrap">
+            <div class="item auto">1</div>
+            <div class="item auto">2</div>
+            <div class="item auto">3</div>
+            <div class="item auto">4</div>
+            <div class="item auto">5</div>
+        </div>
+
+        <p><code>row-reverse wrap</code></p>
+        <div class="container row-reverse-wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </main>
+</body>
+</html>
