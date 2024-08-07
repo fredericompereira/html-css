@@ -17,12 +17,33 @@ header, main {
 
 .container {
     background-color: hsl(0, 0%, 100%);
+    margin-bottom: 2rem;
     display: flex;
-    flex-direction: row-reverse;
 }
 
 .item {
     background-color: hsl(30, 70%, 70%);
     margin: 1rem;
     text-align: center;
+    max-width: fit-content;
+}
+
+#row {
+    flex-direction: row;
+}
+
+#row-reverse {
+    flex-direction: row-reverse;
+}
+
+#column {
+    flex-direction: column;
+}
+
+#column-reverse {
+    flex-direction: column-reverse;
+}
+
+.cross {
+    writing-mode: vertical-lr;
 }
