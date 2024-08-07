@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Flexible Box CSS</h1>
+        <h2>Aula 4 - Alinhamento nos eixos Flexbox CSS</h2>
+    </header>
+    <main>
+        <h3>Alinhamento no eixo principal (main-axis) <code>justify-content</code></h3>
+        
+        <p><code>flex-start</code> - Alinha os itens no início do eixo.</p>
+        <div class="container flex-start">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+
+        <p><code>flex-end</code> - Alinha os itens no fim do eixo.</p>
+        <div class="container flex-end">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+
+        <p><code>center</code> - Alinha os itens no centro do eixo.</p>
+        <div class="container center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        <p><code>space-between</code> - Alinha o 1º item no início, o 2º no fim e o restante com espaço igual entre eles.</p>
+        <div class="container space-between">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        <p><code>space-evenly</code> - Alinha os itens com espaço igual entre eles.</p>
+        <div class="container space-evenly">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        <p><code>space-around</code> - Divide o container na quantidade de itens e alinha eles no centro de cada espaço.</p>
+        <div class="container space-around">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+
+        <h3>Alinhamento no eixo transversal (cross-axis) <code>align-items</code></h3>
+
+        <p><code>stretch</code> - Estica os itens.</p>
+        <div class="container h-15 ai-stretch">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+
+        <p><code>flex-start</code> - Alinha os itens no início do eixo.</p>
+        <div class="container h-15 ai-flex-start">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        <p><code>flex-end</code> - Alinha os itens no fim do eixo.</p>
+        <div class="container h-15 ai-flex-end">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        <p><code>center</code> - Alinha os itens no centro do eixo.</p>
+        <div class="container h-15 ai-center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </main>
+</body>
+</html>
