@@ -33,3 +33,11 @@ section {
     align-items: center;
     gap: 0.5rem;
 }
+
+p {
+    margin-bottom: 1rem;
+}
+
+label, .submit {
+    cursor: pointer;
+}
