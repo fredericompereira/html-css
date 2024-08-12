@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+body {
+    background-color: hsl(0, 0%, 90%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, main {
+    max-width: 768px;
+    margin: auto;
+}
+
+.container, .item {
+    border-radius: 0.5rem;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    height: 24rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 3rem;
+}
+
+.item {
+    background-color: hsl(30, 70%, 70%);
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.stretch {
+    align-content: stretch;
+}
+
+.flex-start {
+    align-content: flex-start;
+}
+
+.flex-end {
+    align-content: flex-end;
+}
+
+.center {
+    align-content: center;
+}
+
+.space-between {
+    align-content: space-between;
+}
+
+.space-evenly {
+    align-content: space-evenly;
+}
+
+.space-around {
+    align-content: space-around;
+}
